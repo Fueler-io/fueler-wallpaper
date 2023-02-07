@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+h1,
+h2,
+h3,
+p,
+span,
+div,
+footer,
+nav,
+.textFont {
+  font-family: 'Metropolis', sans-serif;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.6);
+  font-family: 'Metropolis';
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.hero-1 {
+  font-family: 'Metropolis';
+  background: linear-gradient(135deg, #c9fbff, #ffddee);
+}
+
+.golden-gradient {
+  background: linear-gradient(135deg, #ffd655, #ffa31a);
+}
+
+.hero-2 {
+  font-family: 'Metropolis';
+  background: linear-gradient(
+    90deg,
+    #40baff 1.75%,
+    #687fff 36.04%,
+    #a953ff 68.27%,
+    #fb25ff 100%
+  );
+}
+
+.button {
+  font-family: 'Metropolis';
+  background: linear-gradient(180deg, #00fbff, #09c9e3);
+  box-shadow: 0 7px 18px -10px rgb(0 251 255 / 60%);
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: linear-gradient(180deg, #00fbff, #09c9e3);
+  box-shadow: 0 7px 18px -4px rgb(0 251 255 / 80%);
+  transform: translateY(-3px);
+}
+
+.secondary-button {
+  font-family: 'Metropolis';
+  background: #ffffff;
+  border: 1px solid rgba(181, 178, 197, 0.4) !important ;
+  border-radius: 10px;
+  opacity: 100%;
+  color: #3e3d47 !important;
+}
+
+.secondary-button:hover {
+  background: #ffffff;
+  border: 1px solid rgb(109, 105, 133, 0.1) !important;
+  border-radius: 10px;
+  color: #fb25ff !important;
+  box-shadow: 0px 0px 16px 0px rgba(255, 0, 247, 0.657);
+  transition: 0.25s;
+}
+
+.border-light {
+  border: 1px solid rgba(181, 178, 197, 0.4) !important;
+}
+
+.maker-btn {
+  font-family: 'Metropolis';
+  color: #0d0543 !important;
+}
+
+.maker-btn:hover {
+  color: #fb25ff !important;
+  /* box-shadow: 0px 0px 16px 0px rgba(255, 0, 247, 0.657); */
+  transition: 0.25s;
+}
+.textColor {
+  font-family: 'Metropolis';
+  background: -webkit-linear-gradient(270.2deg, #0e0547 0.18%, #170b6b 101.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.borderColor {
+  border-style: solid;
+  border-image: linear-gradient(270.2deg, #0e0547 0.18%, #170b6b 101.71%);
+  border-image-slice: 1;
+}
+
+.wallpaper {
+  border-radius: 25px;
+}
+
+.makers:hover {
+  transform: scale(0.9);
+}
+
+.back-to-top {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00fbff, #09c9e3);
+  padding: 0.7rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.back-to-top:hover {
+  opacity: 75%;
+}
+
+.go-back-home {
+  position: fixed;
+  left: 0.5rem;
+  bottom: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00fbff, #09c9e3);
+  padding: 0.7rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.go-back-home:hover {
+  opacity: 75%;
+}
+
+/* Masonary Grid */
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
+
+/* Custom Scroll Bars */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
