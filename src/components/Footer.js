@@ -14,6 +14,7 @@ export default function Footer() {
         <strong className="text-primary-blue hover:text-[#fb25ff] ">
           <Link href="/makers">Meet the Creators</Link>
         </strong>
+        <br />
         Credits reserved to all the respective artists who have created these
         masterpiece. Please{' '}
         <Link href="/makers" target={'_blank'}>
